@@ -11,8 +11,11 @@
 <body>
   <div id="vue-app">
     <h1>{{ greet('Night') }}</h1>
-    <h1>{{ name }}</h1>
+    <!-- <h1>{{ name }}</h1> -->
     <p>Job: {{ job }}</p>
+    <a v-bind:href="website">Net Ninja</a>
+    <input type="text" v-bind:value="name">
+    <p v-html='websiteTag'></p>
   </div>
 
   <script src="app.js"></script>
